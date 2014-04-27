@@ -1,0 +1,423 @@
+body {
+	background-image: url('../images/backimage.jpg');
+	margin: 10px 0px;
+	font-family: 'Audiowide', 'cursive';
+}
+
+
+#welcome{
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 800px;
+	height:600px;
+	position: fixed;
+	top: 50px;
+	left: 240px;
+	
+	
+}
+
+#playerNames{
+	width: 742px;
+	height:538px;
+	background-image: url('../images/screen2.jpg');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	position: fixed;
+	opacity : 0.95;
+	top: 60px;
+	left: 276px;
+	color: white;
+
+}
+#p1caption{
+	position: relative;
+	top: 220px;
+	left: 105px;
+}
+#player1nameinput{
+	position: relative;
+	top: 200px;
+	left: 200px;
+
+}
+#p2caption{
+	position: relative;
+	top: 50px;
+	left: 260px;
+}
+#player2nameinput{
+	position: relative;
+	top: 50px;
+	left: 500px;
+
+}
+
+#submitnames{
+	padding: 5px;
+	width: 60px;
+	height: 20px;
+	background-color: #00CD00;
+	padding: 10px;
+	border-radius: 12px;
+	position: relative;
+	top: 120px;
+	left: 250px;
+
+}
+
+
+
+.board { 
+	width: 330px; 
+	overflow: auto;
+	margin: 60px auto 0 auto;
+	padding: 0 auto;
+}
+
+#movingsign{
+	margin: 15px auto 0 auto;
+	width: 716px;
+	height: 535px;
+	background-image: url('../images/Window1.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	margin-left:50px;
+}
+
+#start{
+	width: 540px;
+	height: 400px;
+	margin: 0 auto;
+	color: white;
+	font-size: 30px;
+	position: relative;
+	top: -80px;
+	left: 400px;
+ 
+}
+
+#start:hover{
+	color: gray;
+	font-size: 29px;
+	position: relative;
+	top: -80px;
+	left: 400px;
+ 
+}
+
+#scorep1 {
+	width: 150px;
+	height: 190px;
+	color: white;
+	background-image: url('../images/p1s.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	position: fixed;
+	top: 0px;
+	left: 15px;
+	text-align: center;
+	font-size: 60px;
+}
+#scorep2 {
+	width: 150px;
+	height: 190px;
+	color: white;
+	background-image: url('../images/p2s.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	position: fixed;
+	top: 0px;
+	right: 15px;
+	text-align: center;
+	font-size: 60px;
+}
+
+#charDexter {
+	width: 235px;
+	height: 240px;
+	background-image: url('../images/dex0.gif');
+	background-size: cover;
+	position: fixed;
+	top: 470px;
+	left: 65px;
+	
+}
+
+#charMandark {
+	width: 205px;
+	height: 500px;
+	background-image: url('../images/man0.gif');
+	background-size: 100%;
+	position: fixed;
+	top: 250px;
+	right: 90px;
+}
+
+.cell {
+	height: 100px;
+	width: 100px;
+	border: 3px solid black;
+	background-image: url('../images/box1.jpg');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	float: left;
+	color: purple;
+}
+
+.cell:hover {
+	
+	background-image: url('../images/box2.gif');
+	
+}
+
+.x{
+	background-image: url('../images/x.gif');
+}
+.x:hover {
+	background-image: url('../images/x.gif');
+}
+.o{
+	background-image: url('../images/o.gif');
+}
+.o:hover {
+	background-image: url('../images/o.gif');
+}
+
+        
+#mainPage {
+    width: 1280px;
+    height:705px;
+    overflow: auto;
+}
+
+
+.pageHeader {
+    width: 1280px;
+    height: 150px;
+    border: 1px solid rgba(0,0,0,0);
+    float: left;
+    display: inline-block;
+}
+
+ 
+ .pageHeader div{
+    float: left;
+    display: inline-block;
+}
+
+#headerLeft{
+	width: 412px;
+	height: 150px;
+	background-image: url('../images/topLeft.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: 85%;
+  	background-size: cover;
+}
+#headerCenter{
+	width: 450px;
+	height: 150px;
+	background-image: url('../images/center.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: 85%;
+  	background-size: cover;
+}
+#headerRight{
+	width: 415px;
+	height: 150px;	
+	background-image: url('../images/topRight.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: 85%;
+  	background-size: cover;
+}
+
+
+
+
+
+.mainBody{
+    height: 555px;
+    float: left;
+    text-align: center;
+
+}
+
+#left, #right{
+    width: 181px;
+    
+
+}
+
+#scoreLeft{
+	background-image: url('../images/leftScore.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#scoreLeft, #scoreRight{
+    width: 230px;
+    
+}
+
+#scoreLeft{
+	background-image: url('../images/leftScore.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#scoreRight{
+	background-image: url('../images/rightScore.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+#center{
+	border: 2px solid rgba(0,0,0,0);
+	background-image: url('../images/centerBG.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+    width: 450px;
+    
+}
+
+
+
+
+
+.scoreLeft{
+	width: 80px;	
+	float: right;
+	margin-top: 10px;
+	margin-right: 65px;
+}
+
+
+.dexScore {
+	width: 80px;
+	height: 300px;
+	border: 3px solid black;
+	background-image: url('../images/greenbubbles.gif');
+	background-repeat: repeat;
+	float: left;
+	font-color: white;
+	
+}
+
+.manScore {
+	width: 80px;
+	height: 300px;
+	border: 3px solid black;
+	background-image: url('../images/redbubbles.gif');
+	background-repeat: repeat;
+	float: left;
+	color: purple;
+}
+.scoreRight{
+	width: 80px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 60px;
+}
+.one {
+	background-color: yellow;
+}
+
+
+
+#restart
+{
+	width: 120px;
+	height: 50px;
+	background-image: url('../images/restart.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	z-index: -1;
+}
+
+@-webkit-keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.pulse {
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.pulse:hover, .pulse:focus, .pulse:active {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+
+.uservsuser div{
+	display: inline-block;
+	font-family: 'Audiowide', 'cursive';
+	font-size: 40px;
+}
+
+#versus{
+	width: 66px;
+	height: 54px;
+	background-image: url('../images/vsvs.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+#namePlayer1{
+	float: left;
+	text-align: right;
+}
+#namePlayer2{
+	float: right;
+	text-align: left;
+}

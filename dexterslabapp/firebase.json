@@ -1,0 +1,5 @@
+{
+  "firebase": "dexterslabapp",
+  "public": "app",
+  "rules": "config/security-rules.json"
+}
