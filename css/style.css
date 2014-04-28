@@ -110,8 +110,8 @@ body {
 }
 
 #scorep1 {
-	width: 150px;
-	height: 190px;
+	width: 175px;
+	height: 235px;
 	color: white;
 	background-image: url('../images/p1s.png');
 	-webkit-background-size: cover;
@@ -122,11 +122,11 @@ body {
 	top: 0px;
 	left: 15px;
 	text-align: center;
-	font-size: 60px;
+	font-size: 80px;
 }
 #scorep2 {
-	width: 150px;
-	height: 190px;
+	width: 175px;
+	height: 235px;
 	color: white;
 	background-image: url('../images/p2s.png');
 	-webkit-background-size: cover;
@@ -137,7 +137,7 @@ body {
 	top: 0px;
 	right: 15px;
 	text-align: center;
-	font-size: 60px;
+	font-size: 80px;
 }
 
 #charDexter {
@@ -345,7 +345,7 @@ body {
 
 #restart
 {
-	width: 120px;
+	width: 190px;
 	height: 50px;
 	background-image: url('../images/restart.png');
 	-webkit-background-size: cover;

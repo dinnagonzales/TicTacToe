@@ -19,8 +19,8 @@ DexVSManApp.controller('DexVSManController', function ($scope) {
 	$scope.player1score= 0;
 	var notifyWin2 = false; 
 	$scope.player2score= 0;
-	var round = 0;
-
+	$scope.round = 0;
+	
 
 
 	$scope.resetGame = function (resetGame) {
@@ -109,10 +109,10 @@ DexVSManApp.controller('DexVSManController', function ($scope) {
 		if (notifyWin1 === true)
 		{
 			console.log("Player 1 wins!")
-			round++;
-			alert($scope.player1name + " wins round " + round + "!" );
-			$scope.player1score ++;
-			console.log(player1score);
+			$scope.round++;
+			alert($scope.player1name + " wins round " + $scope.round + "!" );
+			$scope.player1score++;
+			console.log($scope.player1score);
 		} 
 
   	}
@@ -140,11 +140,10 @@ DexVSManApp.controller('DexVSManController', function ($scope) {
 		if (notifyWin2 === true)
 		{ 	
 			console.log("Player 2 wins!")
-			round++;
-			alert($scope.player2name + " wins round " + round + "!" );
-			$scope.player2score ++;
-			console.log(player2score);
-			$scope.manScore[0].push(player2score);	
+			$scope.round++;
+			alert($scope.player2name + " wins round " + $scope.round + "!" );
+			$scope.player2score++;
+			console.log($scope.player2score);
 
 
 		} 
@@ -169,6 +168,7 @@ DexVSManApp.controller('DexVSManController', function ($scope) {
        $scope.submitdone = true;
     }
 
+   
     
 
 
