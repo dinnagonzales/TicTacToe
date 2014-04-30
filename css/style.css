@@ -11,9 +11,7 @@ body {
 	height:600px;
 	position: fixed;
 	top: 50px;
-	left: 240px;
-	
-	
+	left: 240px;	
 }
 
 #playerNames{
@@ -29,8 +27,40 @@ body {
 	top: 60px;
 	left: 276px;
 	color: white;
-
 }
+
+#grandWinner1{*/
+	width: 742px;
+	height:538px;
+	background-image: url('../images/p1win.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	position: fixed;
+	top: 60px;
+	left: 276px;
+	color: #006400;
+	font-size: 70px;
+	text-align: center;
+}
+#grandWinner2{
+	width: 742px;
+	height:538px;
+	background-image: url('../images/p2win.png');
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+	position: fixed;
+	top: 60px;
+	left: 276px;
+	color: red;
+	font-size: 70px;
+	text-align: center;
+}
+
+
 #p1caption{
 	position: relative;
 	top: 220px;
@@ -64,7 +94,6 @@ body {
 	position: relative;
 	top: 120px;
 	left: 250px;
-
 }
 
 
@@ -97,7 +126,6 @@ body {
 	position: relative;
 	top: -80px;
 	left: 400px;
- 
 }
 
 #start:hover{
@@ -106,7 +134,6 @@ body {
 	position: relative;
 	top: -80px;
 	left: 400px;
- 
 }
 
 #scorep1 {
@@ -124,6 +151,7 @@ body {
 	text-align: center;
 	font-size: 80px;
 }
+
 #scorep2 {
 	width: 175px;
 	height: 235px;
@@ -147,8 +175,7 @@ body {
 	background-size: cover;
 	position: fixed;
 	top: 470px;
-	left: 65px;
-	
+	left: 65px;	
 }
 
 #charMandark {
@@ -175,24 +202,24 @@ body {
 }
 
 .cell:hover {
-	
 	background-image: url('../images/box2.gif');
-	
 }
 
 .x{
 	background-image: url('../images/x.gif');
 }
+
 .x:hover {
 	background-image: url('../images/x.gif');
 }
+
 .o{
 	background-image: url('../images/o.gif');
 }
+
 .o:hover {
 	background-image: url('../images/o.gif');
 }
-
         
 #mainPage {
     width: 1280px;
@@ -224,6 +251,7 @@ body {
   	-o-background-size: 85%;
   	background-size: cover;
 }
+
 #headerCenter{
 	width: 450px;
 	height: 150px;
@@ -233,6 +261,7 @@ body {
   	-o-background-size: 85%;
   	background-size: cover;
 }
+
 #headerRight{
 	width: 415px;
 	height: 150px;	
@@ -243,21 +272,14 @@ body {
   	background-size: cover;
 }
 
-
-
-
-
 .mainBody{
     height: 555px;
     float: left;
     text-align: center;
-
 }
 
 #left, #right{
     width: 181px;
-    
-
 }
 
 #scoreLeft{
@@ -267,9 +289,9 @@ body {
   	-o-background-size: cover;
   	background-size: cover;
 }
+
 #scoreLeft, #scoreRight{
-    width: 230px;
-    
+    width: 230px;   
 }
 
 #scoreLeft{
@@ -296,12 +318,7 @@ body {
   	-o-background-size: cover;
   	background-size: cover;
     width: 450px;
-    
 }
-
-
-
-
 
 .scoreLeft{
 	width: 80px;	
@@ -310,7 +327,6 @@ body {
 	margin-right: 65px;
 }
 
-
 .dexScore {
 	width: 80px;
 	height: 300px;
@@ -318,8 +334,7 @@ body {
 	background-image: url('../images/greenbubbles.gif');
 	background-repeat: repeat;
 	float: left;
-	font-color: white;
-	
+	font-color: white;	
 }
 
 .manScore {
@@ -331,20 +346,19 @@ body {
 	float: left;
 	color: purple;
 }
+
 .scoreRight{
 	width: 80px;
 	float: left;
 	margin-top: 10px;
 	margin-left: 60px;
 }
+
 .one {
 	background-color: yellow;
 }
 
-
-
-#restart
-{
+#restart {
 	width: 190px;
 	height: 50px;
 	background-image: url('../images/restart.png');
@@ -385,6 +399,7 @@ body {
   transform: translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
+
 .pulse:hover, .pulse:focus, .pulse:active {
   -webkit-animation-name: pulse;
   animation-name: pulse;
@@ -420,4 +435,9 @@ body {
 #namePlayer2{
 	float: right;
 	text-align: left;
+}
+#name1win{
+	position: relative;
+	top:20px
+	left:-30px;
 }

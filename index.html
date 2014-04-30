@@ -1,94 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
 	<link rel="stylesheet" type"css"="" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
 	<script src="https://cdn.firebase.com/v0/firebase.js"></script>
 	<script src="https://cdn.firebase.com/libs/angularfire/0.6.0/angularfire.min.js"></script>
 	<script src="js/app.js"></script>
-<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
-
-
+  <link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
 	<title>
 	</title>
 </head>
+
+
 <body x-ng-app="DexVSManApp" x-ng-controller="DexVSManController">
-
-
-
 
 	
 <div id="mainPage">
-  <div id="scorep1" ng-show="submitdone" x-ng-model="player1score">
+  <div id="scorep1" ng-show="submitdone" x-ng-model="player1score">       <!--P1 AND P2 SCOREBOARDS-->
   <br>  {{player1score}}</div>
   <div id="scorep2" ng-show="submitdone" x-ng-model="player2score">
   <br>  {{player2score}}</div>
-	<div id="charDexter" ng-show="submitdone"></div>
+
+
+  <div id="grandWinner1" ng-show="overall1" ng-model="player1name" >      <!--LAST WINDOW: P1/P2 WINNER-->
+  <br><br><br><span id="name1win">{{player1name}}</span>  </div>
+  <div id="grandWinner2" ng-show="overall2" ng-model="player2name" >
+  <br><br><br>{{player2name}}   </div>
+
+
+	<div id="charDexter" ng-show="submitdone"></div>                        <!--CHARACTER DIVS.-->
 	<div id="charMandark" ng-show="submitdone"></div>
 		
-		<div id ="welcome" ng-show="showScreen1">
-    <br>
-		<div id="movingsign"> </div>
-		<div id="start" x-ng-click="start()">START</div>
-		</div>
+	<div id ="welcome" ng-show="showScreen1">                               <!--START WINDOW-->        
+  <br>
+	<div id="movingsign"> </div>
+	<div id="start" x-ng-click="start()">START</div>
+	</div>
 	
-	<div id = "playerNames" ng-show="showScreen2">
-    
-  
+	<div id = "playerNames" ng-show="showScreen2">                         <!--PLAYER NAMES INPUT WINDOW-->
   <span id="p1caption">Player 1. Please enter name:<br><br></span>
   <input id="player1nameinput" type="text" ng-model="player1name">
   <span id="p2caption">Player 2. Please enter name:<br></span>
   <input id="player2nameinput" type="text" ng-model="player2name"> 
-
   <span class="pulse" id="submitnames" x-ng-click="submit()">submit</span>
-    
-
   </div>
 
 
 
-    <div class="pageHeader">
-    	<div id="headerLeft"></div>
-    	<div id="headerCenter"></div>
-    	<div id="headerRight"></div>
-    </div>	
+  <div class="pageHeader">
+    <div id="headerLeft"></div>
+    <div id="headerCenter"></div>
+    <div id="headerRight"></div>
+  </div>	
 
 
 
-	<div class="mainBody" id="left"></div>
-    <div class="mainBody" id="scoreLeft">
-
+	<div class="mainBody" id="left"></div>                  <!--NOT SURE WHAT THIS DOES. CAN'T TAKE OUT. WILL MESS WITH LAYOUT.-->
+  <div class="mainBody" id="scoreLeft">                   <!--LEFT DIV. GREEN BUBBLE DIV.-->
     	  <div class="scoreLeft">	
-   	 	 
-        <div class="dexScore"> </div>
+        <div class="dexScore"> 
         </div>
-    </div>
+        </div>
+  </div>
 
     <div class="mainBody" id="center">
-
-		<div class="board">
+		  <div class="board">
           <div 
-          x-ng-class="{cell:true, x:c == 'x', o:c == 'o'}"
-          x-ng-repeat="c in cells track by $index"
-          x-ng-click="PickBox($index);"> 
-          {{ c.cell }} </div>
+            x-ng-class="{cell:true, x:c == 'x', o:c == 'o'}"
+            x-ng-repeat="c in cells track by $index"
+            x-ng-click="PickBox($index);"> 
+            {{ c.cell }} 
+          </div>
     	</div>
 
     	<br><br>
-    	<div id="restart" class= "pulse" x-ng-click="resetGame()" ng-show="submitdone"></div>
-        <div class="uservsuser">
-          <div id="namePlayer1" ng-model="player1name" ng-show="submitdone">{{player1name}}</div>
+    	
+      <div id="restart" class= "pulse" x-ng-click="resetGame()" ng-show="submitdone"></div>   <!--NEW GAME BUTTON-->
+      <div class="uservsuser">
+          <div id="namePlayer1" ng-model="player1name" ng-show="submitdone">{{player1name}}</div> <!--Player 1 name display-->
           <div id="versus" ng-show="submitdone"></div>
-          <div id="namePlayer2" ng-model="player2name" ng-show="submitdone">{{player2name}}</div>
-        </div>
+          <div id="namePlayer2" ng-model="player2name" ng-show="submitdone">{{player2name}}</div> <!--Player 2 name display-->
+      </div>
     </div>
 
-    <div class="mainBody" id="scoreRight">
-   		 <div class="scoreRight">	
-   	 	  <div class="manScore"> </div>
-          </div>
-    </div>
-    <div class="mainBody" id="right"></div>
+  <div class="mainBody" id="scoreRight">              <!--RIGHT DIV. RED BUBBLE DIV.-->
+   		<div class="scoreRight">	
+   	 	<div class="manScore"> 
+      </div>
+      </div>
+  </div>
+  <div class="mainBody" id="right"></div>             <!--NOT SURE WHAT THIS DOES. CAN'T TAKE OUT. WILL MESS WITH LAYOUT.-->
     
 
 </div>
