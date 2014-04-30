@@ -103,17 +103,18 @@ DexVSManApp.controller('DexVSManController', function ($scope) {
   					s=0;
 		}
 
-		if ($scope.notifyWin1 === true) {
+		if ($scope.notifyWin1 === true) { 	
 			console.log("Player 1 wins!")
-			$scope.round++;														
+			$scope.round++;
 			alert($scope.player1name + " wins round " + $scope.round + "!" );
 			$scope.player1score++;
 			console.log($scope.player1score);
-				if ($scope.player1score === 3) { 					// if score = 3, player 1 is the overall winner!
+			if ($scope.player1score === 3) {						//if score = 3, player 2 is the overall winner!	
 					console.log("OVERALL WINNER!!");
-					$scope.overall1 = true; 
+					$scope.overall1 = true;
 					$scope.submitdone = false;
-				}
+			}
+
 		} 
   	}
 
