@@ -44,7 +44,7 @@ DexVSManApp.controller('DexVSManController', function ($scope) {
 		$scope.player2=[];
 		x = 0;												// variable used to itterate through winCombo array
 		s = 0;												// nunber of matches (s = 3 -- MATCH!)
-		$scope.notifyWin1 = false;  						//false = lose! true = win!
+		$scope.notifyWin1 = false;  						// false = lose! true = win!
 		$scope.notifyWin2 = false;
 	}
 	
